@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #002;
+    display: flex;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 25px;
+}
+.menu{
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 1s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+ul li a:hover , .dashboard , .information .box:hover , td:hover{
+    background-color: rgb(145, 142, 142);
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.logout a {
+    background-color: rgb(164, 10, 10);
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title{
+    background-color: rgb(11, 11, 86);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.information .box{
+    background-color: #123;
+    height: 150px;
+    width: 150px;
+    flex-grow: 1;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .5s;
+}
+.information .box i{
+    font-size: 40px;
+}
+.information .box .data{
+    text-align: center;
+}
+.information .box .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 7px;
+}
+td , th {
+    background-color: #123;
+    height: 40px;
+    border-radius: 7px;
+}
+th{
+    background-color: rgb(11, 11, 86);
+}
+td{
+    transition: .5s;
+}
+.price , .count{
+    padding: 5px;
+    border-radius: 7px;
+}
+.price{
+    background-color: rgb(10, 94, 10);
+}
+.count{
+    background-color: #5A9BD4;
+}
